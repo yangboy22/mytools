@@ -1,0 +1,38 @@
+cordova create myapp com.org.myapp "HelloWorld"  
+cd myapp  
+cordova platform add android  //添加android运行平台
+cordova build android   //编译apk
+cordova emulate android  //调用adb调试应用
+
+
+$ionic start myApp blank（空项目）
+$ionic start myApp tabs（带导航条）
+$ionic start myApp sidemenu（带侧滑菜单）
+
+2、 运行我们刚才创建的Ionic项目
+cd myApp//到项目目录下
+ionic platform add ios/android //添加平台
+ionic platform remove ios/android//移除平台
+ionic build ios/android//编译项目apk
+ionic run ios/android [options]（相当于build + emulate）
+ionic serve （开启服务调试，可以在谷歌浏览器调试）
+
+
+plugman create --name MyPlugin --plugin_id com.plugin.myPlugin --plugin_version 0.0.1
+
+plugman create --name PlateidPlugin --plugin_id com.cp.plateid --plugin_version 0.0.1
+
+进入插件 添加平台
+cd MyPlugin
+plugman platform add --platform_name android
+
+MyPlugin如果在项目根目录，运行
+ ionic cordova plugin add MyPlugin
+
+
+mosquitto -c mosquitto.conf
+
+mosquitto_sub -v -t {topic}
+mosquitto_pub -t {topic} -m {message}
+
+mosquitto_passwd [ -c | -D ] passwordfile username 
